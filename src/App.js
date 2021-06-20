@@ -17,7 +17,7 @@ function App() {
       <div className="App">
         <Switch>
           <Route exact path="/subreddit">
-            <Redirect to="/" />
+            <HomePage />
           </Route>
           <Route exact path="/">
             <HomePage />

@@ -58,6 +58,7 @@ export const articleSlice = createSlice({
     updateSelectedArticle: (state, action) => {
       if (action.payload) {
         state.article = action.payload;
+        state.status = 'loaded'
       }
     },
     updateSelectedArticleVote: (state, action) => {
@@ -105,5 +106,6 @@ export const { updateSelectedArticle, updateSelectedArticleVote } =
 // in the slice file. For example: `useSelector((state: RootState) => state.subreddit.value)`
 export const selectArticle = (state) => state.selectedArticle.article;
 export const selectErrorMsg = (state) => state.selectedArticle.errorMsg;
+export const selectArticleLoadStatus = (state) => state.selectedArticle.status;
 
 export default articleSlice.reducer;

@@ -15,6 +15,7 @@ import { useScrollPosition } from "../../common/utils/positionUtils";
 import Sort from "../../common/sort/Sort";
 import Article from "../../common/article/Article";
 import ScrollTopButton from "../../common/scrollTop/ScrollTopButton";
+import { ListLoader } from "../../common/loader/Loader";
 import "./SearchPage.css";
 
 function SearchPage() {
@@ -83,6 +84,7 @@ function SearchPage() {
             </Link>
           ))}
         </div>
+        {loadStatus === "loading" && <ListLoader />}
         <ScrollTopButton />
       </section>
     );

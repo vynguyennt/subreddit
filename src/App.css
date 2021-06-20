@@ -18,7 +18,12 @@ body, input, button, select {
 }
 
 h1 {
-  font-size: 1.4em;
+  font-size: 1.5em;
+}
+
+.App {
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .App:before {

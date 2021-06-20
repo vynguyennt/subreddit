@@ -2,11 +2,16 @@
   position: fixed;
   bottom: 10px;
   right: 10px;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.scroll-top-btn i {
   background: var(--primary-color);
   color: #fff;
   border: 0;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
+  padding: 10px;
 }

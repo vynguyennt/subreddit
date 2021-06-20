@@ -8,8 +8,15 @@
   grid-gap: 4px;
 }
 
+.article-title {
+  font-size: 1.3em;
+  word-break: break-word;
+}
+
 .article-details {
   margin-left: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .article-img-content, .article-video-content {

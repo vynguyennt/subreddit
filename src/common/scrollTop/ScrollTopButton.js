@@ -4,8 +4,8 @@ import "./ScrollTopButton.css";
 
 export default function ScrollTopButton() {
   const [isHidden, updateIsHidden] = useState(true);
-  useScrollPosition(({ prevPos, currPos }) => {
-    if (currPos.y < prevPos.y && currPos.y < -100) {
+  useScrollPosition(({ currPos }) => {
+    if (currPos.y < -100) {
       updateIsHidden(false);
     } else {
       updateIsHidden(true);

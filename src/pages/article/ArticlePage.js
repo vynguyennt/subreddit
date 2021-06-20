@@ -6,14 +6,17 @@ import {
   fetchArticle,
   selectArticle,
   selectErrorMsg,
+  selectArticleLoadStatus,
 } from "../../store/articleSlice";
 import ScrollTopButton from "../../common/scrollTop/ScrollTopButton";
+import { PageLoader } from "../../common/loader/Loader";
 import "./ArticlePage.css";
 
 function ArticlePage() {
   const { subreddit, articleId } = useParams();
   const article = useSelector(selectArticle);
   const errorMsg = useSelector(selectErrorMsg);
+  const loadStatus = useSelector(selectArticleLoadStatus);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -22,6 +25,9 @@ function ArticlePage() {
     }
   }, [articleId]);
 
+  if (loadStatus === "loading") {
+    return <PageLoader />;
+  }
   return (
     <section
       className={"article-page" + (article.id ? "" : " article-page__error")}
