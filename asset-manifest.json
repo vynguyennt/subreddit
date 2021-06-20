@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/subreddit/static/css/main.7c570f93.chunk.css",
-    "main.js": "/subreddit/static/js/main.389712fa.chunk.js",
-    "main.js.map": "/subreddit/static/js/main.389712fa.chunk.js.map",
+    "main.css": "/subreddit/static/css/main.7a3ba2e6.chunk.css",
+    "main.js": "/subreddit/static/js/main.df7db3a5.chunk.js",
+    "main.js.map": "/subreddit/static/js/main.df7db3a5.chunk.js.map",
     "runtime-main.js": "/subreddit/static/js/runtime-main.ed9f5008.js",
     "runtime-main.js.map": "/subreddit/static/js/runtime-main.ed9f5008.js.map",
-    "static/js/2.af4b22b6.chunk.js": "/subreddit/static/js/2.af4b22b6.chunk.js",
-    "static/js/2.af4b22b6.chunk.js.map": "/subreddit/static/js/2.af4b22b6.chunk.js.map",
+    "static/js/2.3b213b7f.chunk.js": "/subreddit/static/js/2.3b213b7f.chunk.js",
+    "static/js/2.3b213b7f.chunk.js.map": "/subreddit/static/js/2.3b213b7f.chunk.js.map",
     "index.html": "/subreddit/index.html",
-    "static/css/main.7c570f93.chunk.css.map": "/subreddit/static/css/main.7c570f93.chunk.css.map",
-    "static/js/2.af4b22b6.chunk.js.LICENSE.txt": "/subreddit/static/js/2.af4b22b6.chunk.js.LICENSE.txt"
+    "static/css/main.7a3ba2e6.chunk.css.map": "/subreddit/static/css/main.7a3ba2e6.chunk.css.map",
+    "static/js/2.3b213b7f.chunk.js.LICENSE.txt": "/subreddit/static/js/2.3b213b7f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ed9f5008.js",
-    "static/js/2.af4b22b6.chunk.js",
-    "static/css/main.7c570f93.chunk.css",
-    "static/js/main.389712fa.chunk.js"
+    "static/js/2.3b213b7f.chunk.js",
+    "static/css/main.7a3ba2e6.chunk.css",
+    "static/js/main.df7db3a5.chunk.js"
   ]
 }
