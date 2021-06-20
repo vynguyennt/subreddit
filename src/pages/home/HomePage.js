@@ -24,6 +24,7 @@ function HomePage() {
             value={subredditName}
             onChange={(e) => updateSubredditName(e.target.value)}
             className="search-input"
+            required
           />
           <button type="submit" className="search-button">
             <i className="material-icons">search</i>
