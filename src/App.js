@@ -1,7 +1,14 @@
 import React from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
-import SearchPage from './pages/search/SearchPage'
-import ThreadPage from './pages/thread/ThreadPage'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
+import SearchPage from "./pages/search/SearchPage";
+import ArticlePage from "./pages/article/ArticlePage";
+import HomePage from "./pages/home/HomePage";
+import Header from "./common/header/Header";
 import "./App.css";
 
 function App() {
@@ -9,12 +16,21 @@ function App() {
     <Router>
       <div className="App">
         <Switch>
-          <Route path="/" exact>
+          <Route exact path="/subreddit">
+            <Redirect to="/" />
+          </Route>
+          <Route exact path="/">
+            <HomePage />
+          </Route>
+          <Route path="/r/:subreddit/comments/:articleId">
+            <Header />
+            <ArticlePage />
+          </Route>
+          <Route path="/r/:subreddit">
+            <Header />
             <SearchPage />
           </Route>
-          <Route path="/thread">
-            <ThreadPage />
-          </Route>
+          <Redirect from="/:subreddit" to="/r/:subreddit" />
         </Switch>
       </div>
     </Router>

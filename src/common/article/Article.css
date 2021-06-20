@@ -1,0 +1,58 @@
+.article {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  border: solid 1px #ccc;
+  display: grid;
+  grid-template-columns: 40px auto;
+  grid-gap: 4px;
+}
+
+.article-details {
+  margin-left: 8px;
+}
+
+.article-img-content, .article-video-content {
+  text-align: center;
+}
+
+.article-img {
+  max-height: 700px;
+  max-width: 95%;
+}
+
+.article-video {
+  max-height: 700px;
+  max-width: 95%;
+}
+
+.article-link-content {
+  display: flex;
+}
+
+.thumbnail-img {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.posted-info {
+  font-size: 0.75rem;
+  color: #787C7E;
+}
+
+.actions-panel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #878a8c;
+  padding: 8px 0;
+}
+
+.actions-panel .action-icon {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 20px;
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+  margin-right: 6px;
+}

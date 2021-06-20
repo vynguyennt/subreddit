@@ -1,0 +1,72 @@
+.sort-box {
+  background: #fff;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+}
+
+.sort-button {
+  background: none;
+  border: 0;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-weight: 700;
+  color: #878a8c;
+  margin-right: 8px;
+}
+
+.sort-button__selected {
+  color: var(--primary-color);
+  background: #f6f7f8;
+}
+
+.sort-button i, .sort-button span {
+  vertical-align: middle;
+}
+
+.sort-button .start-icon {
+  padding-right: 8px;
+}
+
+.sort-time-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.sort-time-options {
+  list-style: none;
+  background: #fff;
+  border: solid 1px #edeff1;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 #1c1c1c33;
+  color: #1c1c1c;
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: max-content;
+}
+
+.sort-time-option {
+  color: #878a8c;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 18px;
+  max-height: 54px;
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 3;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  font-weight: 700;
+  padding: 8px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.sort-time-option:hover {
+  background-color: #e9f5fd;
+}
+
+.sort-time-option__selected {
+  color: var(--primary-color);
+}
